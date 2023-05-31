@@ -21,6 +21,8 @@ public:
 
 	Array(int* arr, int sizeArr);
 
+	Array(const Array& obj);
+
 	int getSizeArr();
 
 	void setArr();

@@ -15,6 +15,17 @@ Array::Array(int* arr, int sizeArr)
 	this->sizeArr = sizeArr;
 }
 
+Array::Array(const Array& obj)
+{
+	this->sizeArr = obj.sizeArr;
+
+	this->arr = new int[sizeArr];
+
+	for (int i = 0; i < sizeArr; i++) {
+		this->arr[i] = obj.arr[i];
+	}
+}
+
 int Array::getSizeArr()
 {
 	return sizeArr;
