@@ -4,9 +4,9 @@
 int main()
 {
     // check:
-    Array arr(10);
+    Array arr({5,6,2,7,8,11});
 
-    arr.setArr();
+    /*arr.setArr();
     arr.displayArr();
     cout << endl;
 
@@ -25,7 +25,9 @@ int main()
 
     cout << arr.findMaxArr();
     cout << endl;
-    cout << arr.findMinArr();
+    cout << arr.findMinArr();*/
+
+    arr.displayArr();
 
 
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <initializer_list>
 
 using namespace std;
 /*
@@ -20,6 +21,8 @@ public:
 	Array(int sizeArr);
 
 	Array(int* arr, int sizeArr);
+
+	Array(initializer_list<int> array);
 
 	int getSizeArr();
 

@@ -15,6 +15,17 @@ Array::Array(int* arr, int sizeArr)
 	this->sizeArr = sizeArr;
 }
 
+Array::Array(initializer_list<int> array)
+{
+	arr = new int[array.size()];
+	for (int elements : array) {
+		*arr = elements;
+		arr++;
+	}
+	arr -= array.size();
+	sizeArr = array.size();
+}
+
 int Array::getSizeArr()
 {
 	return sizeArr;
