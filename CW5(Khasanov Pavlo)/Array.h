@@ -22,6 +22,8 @@ public:
 
 	Array(int* arr, int sizeArr);
 
+	Array(const Array& obj);
+
 	Array(initializer_list<int> array);
 
 	int getSizeArr();
