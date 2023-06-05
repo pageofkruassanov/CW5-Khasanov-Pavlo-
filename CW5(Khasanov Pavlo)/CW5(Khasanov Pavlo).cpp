@@ -6,6 +6,21 @@ ostream& operator<<(ostream& out, const Array& arr) {
     }
     return out;
 }
+istream& operator>>(istream& cin, Array& arr) {
+    cout << "Input size arr: ";
+    cin >> arr.sizeArr;
+    if (arr.arr != nullptr) {
+        delete[] arr.arr;
+    }
+    arr.arr = new int[arr.sizeArr];
+    cout << endl;
+    for (int i = 0; i < arr.sizeArr; i++) {
+        cout << "Input " << i + 1 << " element: ";
+        cin >> arr.arr[i];
+        cout << endl;
+    }
+    return cin;
+}
 
 int main()
 {
@@ -33,8 +48,8 @@ int main()
     cout << arr.findMaxArr();
     cout << endl;
     cout << arr.findMinArr();*/
-
-    cout << arr;
+    
+    /*cout << arr;
     cout << endl;
     bool isArr;
     isArr = arr > arr2;
@@ -42,7 +57,10 @@ int main()
     isArr = arr < arr2;
     cout << isArr << endl;
     isArr = arr == arr2;
-    cout << isArr;
-
+    cout << isArr;*/
+    Array arr3;
+    cin >> arr3;
+    cout << endl;
+    arr3.displayArr();
 
 }

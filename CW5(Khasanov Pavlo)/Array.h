@@ -49,6 +49,8 @@ public:
 
 	bool operator==(const Array& arr);
 
+	friend istream& operator>>(istream& cin, Array& arr);
+
 	~Array();
 };
 
