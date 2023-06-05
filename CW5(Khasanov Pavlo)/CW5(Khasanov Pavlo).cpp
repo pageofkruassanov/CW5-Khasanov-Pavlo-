@@ -1,5 +1,11 @@
 #include "Array.h"
 
+ostream& operator<<(ostream& out, const Array& arr) {
+    for (int i = 0; i < arr.sizeArr; i++) {
+        out << arr.arr[i] << endl;
+    }
+    return out;
+}
 
 int main()
 {
@@ -27,7 +33,7 @@ int main()
     cout << endl;
     cout << arr.findMinArr();*/
 
-    arr.displayArr();
+    cout << arr;
 
 
 }

@@ -41,6 +41,8 @@ public:
 
 	int findMaxArr();
 
+	friend ostream& operator<<(ostream& out, const Array& arr);
+
 	~Array();
 };
 
