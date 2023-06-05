@@ -131,6 +131,21 @@ int Array::findMaxArr()
 	return max;
 }
 
+bool Array::operator<(const Array& arr)
+{
+	return this->sizeArr < arr.sizeArr;
+}
+
+bool Array::operator>(const Array& arr)
+{
+	return this->sizeArr > arr.sizeArr;
+}
+
+bool Array::operator==(const Array& arr)
+{
+	return this->sizeArr == arr.sizeArr;
+}
+
 Array::~Array()
 {
 	delete[] arr;

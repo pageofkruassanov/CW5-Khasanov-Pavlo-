@@ -43,6 +43,12 @@ public:
 
 	friend ostream& operator<<(ostream& out, const Array& arr);
 
+	bool operator<(const Array& arr);
+
+	bool operator>(const Array& arr);
+
+	bool operator==(const Array& arr);
+
 	~Array();
 };
 
